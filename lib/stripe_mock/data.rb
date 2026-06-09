@@ -416,6 +416,11 @@ module StripeMock
         end_at: nil,
         pause_collection: nil,
         cancellation_details: {},
+        trial_settings: {
+          end_behavior: {
+            missing_payment_method: 'create_invoice'
+          }
+        },
       }, params)
     end
 
